@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>我的生日惊喜</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>我的生日惊喜</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<article>
+  <div class="ck_wra">
+      <div class="ck_main"> 
+         <ul class="j_giftBox"> 
+             <li> 
+               2014年12月20号
+             </li>
+             <li class="j_gift_spe"> 
+                <span><img src="img/img_gift.png" alt=""></span>
+                <p>生日惊喜即刻来临！ <br>是谁送的呢 记得开门查收~ </p>
+             </li>
+         </ul>
+         <br><br><br>
+         <p class="color_grey ck_align_c">更多惊喜随时到来</p>
+
+      </div>
+  </div>
+</article>
+</body>
+</html>

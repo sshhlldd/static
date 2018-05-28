@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>订单状态（新）</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>订单状态</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<article>
+  <div class="ck_wra">
+      <div class="ck_main">
+         <dl class="ck_new_list"> 
+            <dd><strong>2014年12月15日</strong> <span class="color_blue fr">配送中</span></dd>
+            <dd class="ck_new_cake"> 
+                  <span><img src="img/img_cake.png"/></span>
+                  <p>乐扣真皮修身弹力腰带</p>
+                  <p>￥178.00*1件</p>
+            </dd>
+            <dt>共<span>1</span>件商品，合计￥356.00 <br><a href="#" class="btn_zhifu2">确认收货</a></dt>
+         </dl>
+         <dl class="ck_new_list"> 
+            <dd><strong>2014年12月15日</strong> <span class="color_blue fr">已签收</span></dd>
+            <dd class="ck_new_cake"> 
+                  <span><img src="img/img_some.png"/></span>
+                  <p>蘑菇空气净化器</p>
+                  <p>￥178.00*1件</p>
+            </dd>
+            <dd class="ck_new_cake"> 
+                  <span><img src="img/img_some.png"/></span>
+                  <p>蘑菇空气净化器</p>
+                  <p>￥178.00*1件</p>
+            </dd>
+            <dt>共<span>2</span>件商品，合计￥356.00 <br><a href="#" class="btn_zhifu2">我来评价</a></dt>
+         </dl>
+         <dl class="ck_new_list"> 
+            <dd><strong>2014年12月15日</strong> <span class="color_blue fr">待付款</span></dd>
+            <dd class="ck_new_cake"> 
+                  <span><img src="img/img_cake.png"/></span>
+                  <p>乐扣真皮修身弹力腰带</p>
+                  <p>￥178.00*1件</p>
+            </dd>
+            <dt>共<span>1</span>件商品，合计￥356.00 <br><a href="#" class="btn_zhifu2">我要支付</a></dt>
+         </dl>
+      </div>
+  </div>
+</article>
+</body>
+</html>

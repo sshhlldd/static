@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>购物车</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.2.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>购物车</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<article>
+  <div class="ck_wra">
+      <div class="ck_main"> 
+           <dl> 
+              <dt class="ck_ydb">&nbsp;&nbsp;一大波惊喜,即将到达……  <div class="ck_xiugai"><input type="button" class="btn_little_grey" value="删除"></div></dt>
+              <dd class="ck_goods"> 
+                    <div class="ck_div1">
+                    <p class="ck_checkbox">
+                      <i></i>
+                     <p class="ck_zeng"><em class="z">赠</em><em class="ji">积</em><em class="juan">券</em></p>
+                   </div>
+                   <div class="ck_div2"><img src="img/img_cake.png" alt=""></div>
+                   <div class="ck_div3"> 
+                       <p>纯真年代圆形鲜奶水果蛋糕</p>
+                       <div class="j_marginTB"><b class="color_red font_bold">￥178.00</b></div>
+                       <div> 
+                            <div class="ck_little fl"><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span><div class="clear"></div></div>
+                            
+                             <div class="clear"></div>
+                       </div>
+                      
+                   </div>
+                   <p class="clear"></p>
+              </dd>
+              <dd class="ck_goods"> 
+                    <div class="ck_div1">
+                    <p class="ck_checkbox">
+                      <i></i>
+                    <p class="ck_zeng"><em class="z">赠</em><em class="juan">券</em></p>
+                   </div>
+                   <div class="ck_div2"><img src="img/img_cake.png" alt=""></div>
+                   <div class="ck_div3"> 
+                       <p>纯真年代圆形鲜奶水果蛋糕</p>
+                       <div class="j_marginTB"><b class="color_red font_bold">￥178.00</b></div>
+                       <div> 
+                            <div class="ck_little fl"><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span><div class="clear"></div></div>
+                           
+                             <div class="clear"></div>
+                       </div>
+                      
+                   </div>
+                   <p class="clear"></p>
+              </dd>
+              <dd class="ck_goods"> 
+                    <div class="ck_div1">
+                    <p class="ck_checkbox">
+                      <i></i>
+                    <p class="ck_zeng"><em class="z">赠</em><em class="juan">券</em></p>
+                   </div>
+                   <div class="ck_div2"><img src="img/img_cake.png" alt=""></div>
+                   <div class="ck_div3"> 
+                       <p>纯真年代圆形鲜奶水果蛋糕</p>
+                       <div class="j_marginTB"><b class="color_red font_bold">￥178.00</b></div>
+                       <div> 
+                            <div class="ck_little fl"><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span><div class="clear"></div></div>
+                        
+                             <div class="clear"></div>
+                       </div>
+                      
+                   </div>
+                   <p class="clear"></p>
+              </dd>
+              <dd class="ck_goods"> 
+                   <div class="ck_div1">
+                    <p class="ck_checkbox">
+                      <i></i>
+                    <p class="ck_zeng"><em class="z">赠</em><em class="juan">券</em></p>
+                   </div>
+                   <div class="ck_div2"><img src="img/img_cake.png" alt=""></div>
+                   <div class="ck_div3"> 
+                       <p>纯真年代圆形鲜奶水果蛋糕</p>
+                       <div class="j_marginTB"><b class="color_red font_bold">￥178.00</b></div>
+                       <div> 
+                            <div class="ck_little fl"><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span><div class="clear"></div></div>
+                             
+                             <div class="clear"></div>
+                       </div>
+                      
+                   </div>
+                   <p class="clear"></p>
+              </dd>
+              <dd class="ck_goods"> 
+                   <div class="ck_div1">
+                    <p class="ck_checkbox">
+                      <i></i>
+                    <p class="ck_zeng"><em class="z">赠</em><em class="juan">券</em></p>
+                   </div>
+                   <div class="ck_div2"><img src="img/img_cake.png" alt=""></div>
+                   <div class="ck_div3"> 
+                       <p>纯真年代圆形鲜奶水果蛋糕</p>
+                       <div class="j_marginTB"><b class="color_red font_bold">￥178.00</b></div>
+                       <div> 
+                            <div class="ck_little fl"><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span><div class="clear"></div></div>
+                             
+                             <div class="clear"></div>
+                       </div>
+                      
+                   </div>
+                   <p class="clear"></p>
+              </dd>
+           </dl>
+           <br>
+           <div class="txt_align_c"><a href="" class="ck_zhankai">展开查看全部</a></div>
+
+           <div class="ck_all_kong"></div>
+           <div class="ck_allBoxFixed">
+             <div class="ck_allBox">
+                <div class="j_opacity"></div>
+                <div class="j_zindex">
+                <span class="fl_abso ck_checkbox"><i></i><em >全选</em></span>
+                <p>总计:<em class="color_red">￥736.23</em></p>
+                <span class="fr_abso"><input type="button" class="ck_maidan" value="买单(3)"></span>
+                </div>
+             </div>
+           </div>
+      </div>
+  </div>
+</article>
+
+ <!-- 删除弹窗 -->
+  <div class="del_win" style="display:none;"> 
+   <div class="del_cover"></div>
+   <div class="del_box"> 
+       <h2>提示</h2>
+       <h3>确定删除所选商品？</h3>
+       <div><span class="ok"><em>确定</em></span><span class="quit">取消</span></div>
+   </div>
+</div>
+<!-- 底部导航栏 -->
+<div class="ck_Bbox">
+ <div class="ck_posi">
+     <div class="ck_Bbox_div" style="display:none;"><a href=""><em><img src="img/nav_bototm_1.png" width="20px" alt=""></em>首页</a><a href=""><em><img src="img/nav_bototm_2.png" width="20px" alt=""></em>搜索</a><a href=""><em><img  src="img/nav_bototm_3.png" width="20px" alt=""></em>我的</a><a href=""><em><img src="img/nav_bototm_4.png" width="20px" alt=""></em>购物车</a></div>
+     <div class="ck_BnavBtn_out" id="onOFF"></div>
+     <div class="clear" ></div>
+ </div>
+</div>
+<div class="ck_Bbox_kongge"></div>
+<script src="js/nav.js" type="text/javascript"></script>
+</body>
+</html>

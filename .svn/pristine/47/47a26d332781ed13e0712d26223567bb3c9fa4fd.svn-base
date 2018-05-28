@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>订单状态</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>订单状态</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<article>
+  <div class="ck_wra">
+      <div class="ck_main"> 
+          <ul class="j_ddBox"> 
+             <li> 
+                <span>2014年12月25日</span>   <em class="color_red j_abso_right">配送中</em>
+             </li>
+             <li class="j_ddImgLi"> 
+                <div class="j_ddImgBox"><img src="img/img_cake.png"/></div>
+                <div class=""> 
+                  <p><span class="j_font_16 color_black">蘑菇空气净化器台灯</span></p>
+                  <p>规格：白色 触摸式开关<em class="fr color_red ck_align_r">￥198.00<br>X1</em></p>
+                </div>
+             </li> 
+             <li class="ck_align_r"> <span class="j_marginR_10">共<em class="color_black">1</em>件商品</span>合计:￥198.00</li>
+             <li class="ck_align_r j_noborder"><input type="button" class="btn_kong_red" value="确认收货"></li>
+         </ul>
+          <ul class="j_ddBox"> 
+             <li> 
+                <span>2014年12月25日</span>   <em class="color_red j_abso_right">已签收</em>
+             </li>
+             <li class="j_ddImgLi"> 
+                <div class="j_ddImgBox"><img src="img/img_cake.png"/></div>
+                <div class=""> 
+                  <p><span class="j_font_16 color_black">蘑菇空气净化器台灯</span></p>
+                  <p>规格：白色 触摸式开关<em class="fr color_red ck_align_r">￥98.00<br>X1</em></p>
+                </div>
+             </li> 
+             <li class="j_ddImgLi"> 
+                <div class="j_ddImgBox"><img src="img/img_cake.png"/></div>
+                <div class=""> 
+                  <p><span class="j_font_16 color_black">蘑菇空灯</span></p>
+                  <p>规格：白色<em class="fr color_red ck_align_r">￥20.00<br>X1</em></p>
+                </div>
+             </li> 
+             <li class="ck_align_r"> <span class="j_marginR_10">共<em class="color_black">2</em>件商品</span>合计:￥192.00</li>
+             <li class="ck_align_r j_noborder"><input type="button" class="btn_kong_grey btn_kong_add_one" value="我要评价"></li>
+         </ul>
+          <ul class="j_ddBox"> 
+             <li> 
+                <span>2014年12月25日</span>   <em class="color_red j_abso_right">待付款</em>
+             </li>
+             <li class="j_ddImgLi"> 
+                <div class="j_ddImgBox"><img src="img/img_cake.png"/></div>
+                <div class=""> 
+                  <p><span class="j_font_16 color_black">蘑菇空气净化器台灯</span></p>
+                  <p>规格：白色 触摸式开关<em class="fr color_red ck_align_r">￥198.00<br>X1</em></p>
+                </div>
+             </li> 
+             <li class="ck_align_r"> <span class="j_marginR_10">共<em class="color_black">1</em>件商品</span>合计:￥198.00</li>
+             <li class="ck_align_r j_noborder"><input type="button" class="btn_kong_red" value="我要付款"></li>
+         </ul>
+      </div>
+  </div>
+</article>
+</body>
+</html>

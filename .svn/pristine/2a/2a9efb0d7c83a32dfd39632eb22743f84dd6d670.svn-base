@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>产品详情-1（礼品）</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/focus.js"></script>
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>产品详情-1（礼品）</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<!-- <div class="ck_focusBox"> -->   
+      <div id="focus" class="focus focus2">
+        <div class="hd">
+          <ul></ul>
+        </div>
+        <div class="bd">
+          <ul>
+              <li><a href="javascript:;"><img src="img/cakeImg/11.jpg" src="images/blank.png" /></a></li>
+              <li><a href="javascript:;"><img src="img/cakeImg/6.jpg" src="images/blank.png"/></a></li>
+              <li><a href="javascript:;"><img src="img/cakeImg/7.jpg" src="images/blank.png"/></a></li>
+              <li><a href="javascript:;"><img src="img/cakeImg/8.jpg" src="images/blank.png"/></a></li>
+          </ul>
+        </div>
+      </div>
+      <script type="text/javascript">
+        TouchSlide({ 
+          slideCell:"#focus",
+          titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+          mainCell:".bd ul", 
+          effect:"left", 
+          autoPlay:true,//自动播放
+          autoPage:true, //自动分页
+          switchLoad:"_src" //切换加载，真实图片路径为"_src" 
+        });
+      </script>
+<!-- </div> -->
+<!-- <div class="ck_focusBox_kongge_140"></div> -->
+<article>
+  <div class="ck_wra">
+      <div class="ck_main">  
+          <h2 class="ck_mesg_title">油画艺术自动伞</h2>
+          <p  class="ck_mesg_itro">斑斓油画卷起来好看，展开了更加好看，如此艺术气息浓厚的自动伞，高大上就是这么简单！</p>
+          <div>
+              <strong class="ck_mesg_money">￥39.00</strong>  
+              <span class="fr"><em class="ck_mesg_biao">活动ing</em>
+              <em class="ck_mesg_biao">包邮</em>
+              <em class="ck_mesg_biao">精美包装</em> </span>
+          <div class="clear"></div></div>
+          <ul class="ck_center_ul ck_center_ul2" style="margin-top:0px;">
+            <li><a href="#"><span class="ck_mes_span">配送</span> <p class="ck_msg"><img src="img/icon_boy.png" alt="">上海16：00前下单付款当日发货，16：00后下单付款次日发货</p> <div class="clear"></div></a> </li>
+          </ul>
+          <div class="ck_cake_mesg"> 
+             <p>适用：<select name="" id=""> 
+			            <option value="">蓝色</option>
+			            <option value="">黄色</option>
+			            <option value="">红色</option>
+			            <option value="">绿色</option> 	
+		          	</select>
+      			 </p>
+      			 <p>规格：64cm/10k三折晴雨伞 长27.5cm*直径4.5cm(弧度)</p>
+      			 <div><span class="fl">数量：</span><span class="ck_jian"></span><input type="text" class="ck_number" value="1" /><span class="ck_jia"></span>   <div class="clear"></div></div>
+          </div>
+          <div class="ck_align_l"> 
+               <a href="" class="btn_half_red">立即购买</a>
+               <a href="" class="btn_half_red">放入购物车</a>
+               <a href="" class="btn_half_like"></a><br>   <!-- 点击过后，桃心变实体btn_half_like_act -->
+               <a href="" class="btn_half_blue">详情介绍</a>
+               <a href="" class="btn_half_blue">用户评价</a>
+          </div>
+          <ul class="ck_pay_a"> 
+              <li><a href="#">定制暗号</a></li>
+              <li><a href="#">电子贺卡祝福功能说明</a></li>
+          </ul>
+          <dl class="ck_giftBox"> 
+             <dd><img src="img/cakeImg/gift1.jpg" alt=""></dd>
+             <dd><img src="img/cakeImg/gift2.jpg" alt=""></dd>
+             <dd><img src="img/cakeImg/gift3.jpg" alt=""></dd>
+          </dl>
+          <br><br>
+      </div>
+  </div>
+</article>
+</body>
+</html>

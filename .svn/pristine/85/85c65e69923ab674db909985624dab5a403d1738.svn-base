@@ -1,0 +1,226 @@
+// 下方导航
+var onOFF = $("#onOFF");
+var change = $(".ck_Bbox_div");
+onOFF.click(function(){
+      $(this).hide();
+      change.animate({width:'toggle'},"slow",function(){ 
+          if(onOFF.hasClass('ck_BnavBtn_in')){ 
+             $("#onOFF").show();
+             onOFF.attr({class:"ck_BnavBtn_out"});
+          }else{ 
+            $("#onOFF").show();
+             onOFF.attr({class:"ck_BnavBtn_in"});
+          }
+      });
+}); 
+var ii=0;
+// 生日蛋糕与生日礼物 导航切换
+$(".ck_qiehuan").click(function(){ 
+   ii=$(this).index();
+   var par=$(this).parents(".ck_con")
+ 
+   if(ii==0){
+     par.removeClass('act1')
+     par.addClass('act0');
+   }
+   if(ii==1){
+    par.removeClass('act0')
+    par.addClass('act1');
+   }
+  
+});
+// 筛选按钮
+var btn_shaixuan = $(".ck_indexBox .btn_shaixuan");
+
+btn_shaixuan.click(function(){
+    $('.j_popBox_cover').fadeIn();
+     $(".popBox").eq(ii).animate({right:'0px'},"slow");
+    // $(".cityBox").animate({left:'-225px'},"fast",function(){ 
+      
+    // });
+    $('.j_popBox_cover').removeClass('hide');
+}); 
+// 城市筛选按钮
+var btn_city = $(".btn_city");
+var cityBox = $(".cityBox");
+var city_close = $(".city_close");
+btn_city.click(function(){ 
+    $('.j_popBox_cover').fadeIn();
+    $(".popBox").animate({right:'-230px'},"fast",function(){ 
+       cityBox.animate({left:'0px'},"slow");
+    });
+   
+}); 
+
+$(".city_shaixuan span").click(function(){
+    var cityName = $(this).text();
+    btn_city.find('em').text(cityName);
+    cityBox.animate({left:'-225px'},"fast");
+    $('.j_popBox_cover').fadeOut();
+});
+$('.j_popBox_cover').click(function(){ 
+    $(this).fadeOut();
+    $(".popBox").eq(ii).animate({right:'-230px'},"fast");
+    $(".cityBox").animate({left:'-225px'},"fast");
+});   
+// 筛选按钮内部
+var pop_l_p = $(".pop_l p");
+var pop_r_div = $(".pop_r div");
+pop_l_p.click(function(){
+
+  var par=$(this).parents('.pop_shaixuan')
+var i=$(this).index();
+pop_l_p.removeClass('over')
+$(this).addClass('over')
+par.find(".pop_r div").hide();
+par.find(".pop_r div").eq(i).show();
+
+})
+
+var pop_r_div_p = $(".pop_r div p");   
+pop_r_div_p.click(function(){ 
+   $(this).parent().children("p").attr("class"," ");
+   $(this).attr("class","over");
+});
+
+$(".pop_clear").click(function(){ 
+   $(".pop_r div p").attr("class"," ");
+});
+
+//清除条件
+$(".btn_kong_grey").click(function() {
+  var par=$(this).parents('.popBox')
+  par.find('.pop_l p').removeClass('over');
+  par.find('.pop_l p').eq(0).addClass('over');
+  par.find('.pop_r p').removeClass('over');
+});
+//确认关闭
+$(".btn_sure_little2").click(function(){
+  var par=$(this).parents();
+  if(par.hasClass('popBox')){
+    $(".popBox").animate({right:'-230px'},"fast");
+    $('.j_popBox_cover').fadeOut();
+  }else{
+    cityBox.animate({left:'-225px'},"fast");
+    $('.j_popBox_cover').fadeOut();
+  }
+
+})
+$(".cityBox .city p").click(function() {
+   cityBox.animate({left:'-225px'},"fast");
+    $('.j_popBox_cover').fadeOut();
+});
+$(".cake_like").click(function(){ 
+    $(this).toggleClass("cake_like_act");
+});
+
+
+
+//商品详情和用户评价tab切换
+$(".ck_tab_nav li").click(function(){ 
+     var av=$(this).index();
+     $(this).attr("class","over").siblings().attr("class","");
+     $(".ck_tab_div dl").eq(av).removeClass("hide").siblings().addClass("hide");     
+});
+
+
+//产品详情桃心
+$(".ck_align_l a").click(function() {
+  $(this).addClass('btn_half_like_act');
+});
+//产品详情加入购物车动画
+$(".ck_align_l .btn_kong_grey").click(function(event) {
+  $(".ck_goodeye").show();
+ $(".ck_goodeye").animate({
+   top: -57,
+   opacity:'1'
+   },
+   500, function() {
+   $(this).animate({
+    opacity:'0'
+     },800,function(){
+      $(this).hide();
+      $(this).css({'top':'-10px'})
+     });
+ });
+});
+
+//支付页面按钮
+$('.j_guan,.j_kai').click(function(){
+  if($(this).hasClass('j_guan')){
+    $(this).removeClass('j_guan').addClass('j_kai')
+  }else{
+    $(this).removeClass('j_kai').addClass('j_guan')
+  }
+
+})
+//新增收货人radio切换
+$('.j_radio_con').click(function(event) {
+  $('.j_radio').removeClass('j_radio_checked');
+ $(this).find('.j_radio').addClass('j_radio_checked')
+});
+$(".j_huanhuo2 textarea").focus(function(event) {
+  if($(this).val()=="请输入详细地址"){
+  $(this).val('');}
+});
+$(".j_huanhuo2 textarea").blur(function(event) {
+  if($(this).val()==""){
+    $(this).val("请输入详细地址")
+    $(this).css({'color':'#cccccc'});
+  }
+  else{$(this).css({'color':'#515861'});
+ }
+ 
+});
+
+//购物车弹窗,购物车check
+$(".ck_xiugai .btn_little_grey").click(function(event) {
+  $(".del_win").fadeIn();
+});
+$(".del_win .ok").click(function(event) {
+  $(".del_win").fadeOut();
+});
+$(".del_win .quit").click(function(event) {
+  $(".del_win").fadeOut();
+});
+$('.ck_checkbox i').click(function(event) {
+  $(this).toggleClass('ck_checked');
+  if($(this).hasClass('ck_checked')){
+    $(this).css({'border':'1px solid #f05484'})
+  }else{
+    $(this).css({'border':'1px solid #e1e1e1'})
+  }
+});
+$('.fl_abso i').click(function(event) {
+  if($(this).hasClass('ck_checked')){
+    $('.ck_checkbox i').addClass('ck_checked');
+    $('.ck_checkbox i').css({'border':'1px solid #f05484'})
+  }else{
+     $('.ck_checkbox i').removeClass('ck_checked');
+    $('.ck_checkbox i').css({'border':'1px solid #e1e1e1'})
+  }
+
+
+});
+//商品详情和用户评价 滚动置顶 固定位置
+var oldTop = $(".ck_tab_nav").offset().top; 
+var wh=$(window).height();
+if(oldTop<wh){
+	$(".ck_tab_nav").css({'margin-top':wh-oldTop});
+	}
+	else{
+		$(".ck_tab_nav").css({'margin-top':'0px'});
+		}
+$(window).scroll(function() {
+  var offTop = $(".ck_tab_nav").offset().top; 
+  var scrTop = $(document).scrollTop();
+  var cha = offTop-scrTop;
+  if(offTop < oldTop){ 
+     $(".ck_tab_nav").css({'position':'relative','margin-top':wh-oldTop});
+  }
+  if(cha < 0){ 
+    
+    $(".ck_tab_nav").css({'position':'fixed','margin-top':'0px'});
+  }
+  //document.title = offTop;
+});

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><!--以ie8内核解析-->
+<meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable"><!--删除默认的苹果工具栏和菜单栏-->
+<meta content="black" name="apple-mobile-web-app-status-bar-style"><!--默认苹果的状态栏透明-->
+<meta content="telephone=no" name="format-detection"><!--可将telephone=no，则手机号码不被显示为拨号链接-->
+<title>帮助中心</title>
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header class="ck_header">
+  <a href="javascript:" class="ck_back">返回</a>
+  <strong>帮助中心</strong>
+  <!-- <a href="javascript:" class="ck_people"></a> -->
+</header>
+<div class="ck_header_kongge"></div>
+
+<article>
+  <div class="ck_wra">
+      <div class="ck_main"> 
+          <div class="ck_help"><img src="img/unknow1.png" alt=""></div>
+          <ul class="ck_help_list"> 
+            <li><a href="#">挑选商品<em>（如何挑选商品?）</em></a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">订单问题<em>（如何修改订单?）</em></a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">发货问题</a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">配送问题</a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">售后问题</a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">活动问题<em>（如何兑换活动奖品？）</em></a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          	<li><a href="#">联系客服</a><span class="j_nextImg"></span> <div class="clear"></div></li>
+          </ul>
+      </div>
+  </div>
+</article>
+</body>
+</html>

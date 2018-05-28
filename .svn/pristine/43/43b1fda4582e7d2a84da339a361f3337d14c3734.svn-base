@@ -1,0 +1,116 @@
+// 下方导航
+var onOFF = $("#onOFF");
+var change = $(".ck_Bbox_div");
+onOFF.click(function(){
+      $(this).hide();
+      change.animate({width:'toggle'},"slow",function(){ 
+          if(onOFF.hasClass('ck_BnavBtn_in')){ 
+             $("#onOFF").show();
+             onOFF.attr({class:"ck_BnavBtn_out"});
+          }else{ 
+            $("#onOFF").show();
+             onOFF.attr({class:"ck_BnavBtn_in"});
+          }
+      });
+}); 
+// 筛选按钮
+var btn_shaixuan = $(".btn_shaixuan");
+var popBox = $(".popBox");
+var pop_sure = $(".pop_sure");
+btn_shaixuan.click(function(){
+    $(".cityBox").animate({left:'-225px'},"fast",function(){ 
+       popBox.animate({right:'0px'},"slow");
+    });
+    $('.j_popBox_cover').removeClass('hide');
+}); 
+pop_sure.click(function(){ 
+    popBox.animate({right:'-225px'},"slow");
+});   
+// 筛选按钮内部
+var pop_l_p = $(".pop_l p");
+var pop_r_div = $(".pop_r div");
+for(var i=0;i<pop_l_p.length;i++){ 
+    pop_l_p[i].index = i;
+    pop_l_p[i].onclick = function(){
+      for(var j=0;j<pop_l_p.length;j++){ 
+         pop_l_p[j].className = "";
+         pop_r_div[j].style.display = "none";
+      }
+      this.className = "over"; 
+      pop_r_div[this.index].style.display = "block";
+    };  
+}
+var pop_r_div = $(".pop_r div");
+var pop_r_div_p = $(".pop_r div p");   
+pop_r_div_p.click(function(){ 
+   $(this).parent().children("p").attr("class"," ");
+   $(this).attr("class","over");
+});
+
+$(".pop_clear").click(function(){ 
+   $(".pop_r div p").attr("class"," ");
+});
+
+// 城市筛选按钮
+var btn_city = $(".btn_city");
+var cityBox = $(".cityBox");
+var city_close = $(".city_close");
+btn_city.click(function(){ 
+    $(".popBox").animate({right:'-230px'},"fast",function(){ 
+       cityBox.animate({left:'0px'},"slow");
+    });
+    $('.j_popBox_cover').removeClass('hide');
+}); 
+city_close.click(function(){ 
+    cityBox.animate({left:'-225px'},"slow");
+}); 
+
+$(".city_shaixuan span").click(function(){
+    var cityName = $(this).text();
+    btn_city.text(cityName);
+    cityBox.animate({left:'-225px'},"slow");
+});
+
+
+// 喜欢按钮
+$(".cake_like").click(function(){ 
+    $(this).toggleClass("cake_like_act");
+});
+// 生日蛋糕与生日礼物 导航切换
+$(".ck_qiehuan").click(function(){ 
+   var i=$(this).index();
+   var par=$(this).parents(".ck_con")
+ 
+   if(i==0){
+     par.removeClass('act1')
+     par.addClass('act0');
+   }
+   if(i==1){
+    par.removeClass('act0')
+    par.addClass('act1');
+   }
+  
+});
+
+
+//商品详情和用户评价tab切换
+$(".ck_tab_nav li").click(function(){ 
+     var av=$(this).index();
+     $(this).attr("class","over").siblings().attr("class","");
+     $(".ck_tab_div dl").eq(av).removeClass("hide").siblings().addClass("hide");     
+});
+//商品详情和用户评价 滚动置顶 固定位置
+var oldTop = $(".ck_tab_nav").offset().top; 
+$(window).scroll(function() {
+  var offTop = $(".ck_tab_nav").offset().top; 
+  var scrTop = $(document).scrollTop();
+  var cha = offTop-scrTop;
+  if(offTop < oldTop){ 
+     $(".ck_tab_nav").css({'position':'relative'});
+  }
+  if(cha < 0){ 
+    $(".ck_tab_nav").css({'position':'fixed'});
+  }
+  //document.title = offTop;
+});
+
