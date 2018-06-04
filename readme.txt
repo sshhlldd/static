@@ -1,3 +1,53 @@
+2018-5-28
+1.message.html
+2.css添加了/*会员卡~end-会员卡中 添加了message*/
+.ec-member .message p {
+    text-align: left;
+    width: 100%;
+}
+
+.ec-member .message .tit {
+    margin-bottom: 2%;
+    color: #848793;
+}
+
+.ec-member .message .tip {
+    font-size: 12px;
+    color: #999;
+}
+
+.ec-member textarea {
+    width: 98%;
+    padding: 1%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 18px;
+    min-height: 80px;
+}
+
+.ec-member textarea::-webkit-input-placeholder {
+    color: #b6b6b6;
+    font-size: 12px;
+}
+
+.ec-member textarea:-moz-placeholder {
+    color: #b6b6b6;
+    font-size: 12px;
+}
+
+.ec-member textarea::-moz-placeholder {
+    color: #b6b6b6;
+    font-size: 12px;
+}
+
+.ec-member textarea:-ms-input-placeholder {
+    color: #b6b6b6;
+    font-size: 12px;
+}
+
+
+
 2018-5-21
 1.添加会员卡.html
 2.css添加了/*会员卡~end-会员卡*/
