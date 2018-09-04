@@ -40,9 +40,16 @@ var mybase = {
 $(function() {
     mybase.menuCtrl();
     $('.ec_goods button').click(function() {
-        var src = $(this).closest('.ec_goods').find('img').attr('src');
-        var html = '<div style="text-align:center;"><img src="' + src + '"></div>'
-        mybase.mypop('兑换', html);
+        var html = '<div class="pop-address">\
+        <p class="txt_align_c">請輸入收件人資料</p>\
+        <p><input class="form-control" type="text" id="" placeholder="請輸入得獎人姓名"></p>\
+        <p><input class="form-control" type="email" id="" placeholder="請輸入E-mail"></p>\
+        <p><input class="form-control" type="text" id="" placeholder="請輸入收件地址"></p>\
+        <p><input class="form-control" type="text" id="" placeholder="請輸入郵政區號"></p>\
+        <p><input class="form-control" type="text" id="" placeholder="请输入聯絡電話"></p>\
+        <p><textarea class="form-control" placeholder="備註信息"></textarea></p>\
+        </div>'
+        mybase.mypop('兑奖', html);
     })
 
 })

@@ -538,7 +538,7 @@ select {
 .ec_pop .pop_box {
   width: 80%;
   position: fixed;
-  top: 25%;
+  top: 20%;
   left: 10%;
   z-index: 9999;
   background-color: #fff;
@@ -560,6 +560,8 @@ select {
 
 .ec_pop .pop_body {
   position: relative;
+  max-height: 320px;
+  overflow: auto;
   padding: 10px;
 }
 
@@ -586,6 +588,9 @@ select {
   padding: 15px;
   text-align: right;
   border-top: 1px solid #e5e5e5;
+}
+.pop-address p{
+margin-bottom:8px;
 }
 
 /*end-pop*/
