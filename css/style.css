@@ -111,6 +111,7 @@ a:hover {
 
 input[type="button"],
 input[type="text"],
+input[type="email"],
 textarea,
 select {
   -webkit-appearance: none;
