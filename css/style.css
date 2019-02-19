@@ -823,8 +823,8 @@ margin-bottom:8px;
 .ec-dy-list .ec_div3 h4{
   font-size: 16px;
 }
-/*end-訂閱*/
- /*查询*/
+
+
 
  .search-con {
      background: #fff;
@@ -844,7 +844,6 @@ margin-bottom:8px;
      width: 80%;
      padding:2px 2%;
  }
-
 
  .carousel-search .search input {
      border: medium none;
@@ -885,7 +884,7 @@ margin-bottom:8px;
      cursor: pointer;
      display: inline-block;
  }
- /*end-查询*/
+/*end-訂閱*/
 /*照片分享*/
 
 .ec-share {
