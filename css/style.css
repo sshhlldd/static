@@ -1077,7 +1077,49 @@ select {
     font-size: 12px;
 }
 
+/*20200604*/
+.ec-member .addr{
+    background-color: #ffffff;
+   
+    padding:10px;
+    color: #888a92;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.ec-member .addr .addr-tit{
+    width:10%;
+}
+.ec-member .addr .addr-wrap{
+    width:85%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:wrap;
 
+}
+.ec-member .addr .addr-con{
+    width:46%;
+    margin-bottom:2%;
+    margin-left:2%;
+}
+.ec-member .addr .addr-con-100{
+    width:100%;
+}
+.ec-member .addr .addr-con .form-control{
+    padding:0 5%;
+    width:90%
+}
+.ec-member .addr .addr-con-100 textarea{
+    margin-left:2%;
+    padding:0 3%;
+    width:92%
+}
+.ec-member .addr .addr-con-100 textarea::-webkit-input-placeholder {
+    color: #858585;
+    font-size: 14px;
+}
+/*end-20200604*/
 /*end-会员卡*/
 
 
